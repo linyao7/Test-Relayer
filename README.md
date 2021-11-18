@@ -1,3 +1,31 @@
+Install package modules
+
+```shell
+npm install
+```
+
+On separate terminals:
+
+1. Start hardhat local node
+```shell
+npx hardhat node
+```
+
+2. Start node.js relayer
+```shell
+node relayer.js 
+```
+
+3. Start React-App
+```shell
+npm start 
+```
+
+Deploy smart contracts
+```shell
+npx hardhat run --network localhost scripts/deploy.js 
+```
+
 Things done in this project:
 1. Set up hardhat project
 2. Set up ERC20 smart contract and interface
@@ -8,4 +36,3 @@ Things done in this project:
 Notes:
 1. Contract addresses should be in an .env file for production
 2. Changed location of compiled contracts to '/src'
-
