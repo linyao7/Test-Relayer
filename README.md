@@ -11,20 +11,22 @@ On separate terminals:
 npx hardhat node
 ```
 
-2. Start node.js relayer
+2. Deploy smart contracts
+```shell
+npx hardhat run --network localhost scripts/deploy.js 
+```
+
+3. Start node.js relayer
 ```shell
 node relayer.js 
 ```
 
-3. Start React-App
+4. Start React-App
 ```shell
 npm start 
 ```
 
-Deploy smart contracts
-```shell
-npx hardhat run --network localhost scripts/deploy.js 
-```
+
 
 Things done in this project:
 1. Set up hardhat project
