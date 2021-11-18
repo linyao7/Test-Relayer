@@ -11,7 +11,7 @@ On separate terminals:
 npx hardhat node
 ```
 
-2. Deploy smart contracts
+2. Deploy smart contracts. Copy txnHandler's deployed address to **constants.js** and **relayer.js**' **CONTRACT_ADDRESS** variable.
 ```shell
 npx hardhat run --network localhost scripts/deploy.js 
 ```
@@ -25,6 +25,8 @@ node relayer.js
 ```shell
 npm start 
 ```
+
+On clicking button on the UI, a sign message will be initiated and we can now interact with the smart contract.
 
 
 
